@@ -76,3 +76,4 @@ df_check = pd.read_csv("hollywood_limpio.csv")
 
 print("Cantidad de filas y columnas:",df_check.shape)
 print(df_check.isnull().sum())
+

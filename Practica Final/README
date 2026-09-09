@@ -1,0 +1,27 @@
+PREGUNTAS DE RAZONAMIENTO
+
+PREGUNTA 1:
+¿Por qué diagnosticar el dataset completo (forma, nulos) antes de limpiar nada, en vez de empezar a limpiar directamente desde la primera columna que veas?
+Para primero conocer los datos y la esctrucutra que este dataset esta compuesto, y tener una visión general de por donde empezar.
+
+PREGUNTA 2:
+¿Qué pasaría si rellenaras Budget con 0 en vez de eliminar esas filas? ¿Cómo afectaría eso a la columna Ganancia que vas a crear en la próxima etapa?
+ Si realizo esta apción, no tendria unos datos veridicios en el resultado, se asumiria que algunas peliculas no costaron ninguna inversión.
+
+PREGUNTA 3:
+¿Ganancia se calcula restando (WorldGross - Budget). ¿Qué representaría, en cambio, una columna que dividiera WorldGross entre Budget? ¿En qué caso preferirías esa versión en vez de la resta?
+Dividir WorldGross entre Budget calcularía el Retorno de Inversión o múltiplo de rendimiento, es decir, cuántos dólares generó la película por cada dólar invertido.
+
+PREGUNTA 4:
+¿Qué habría pasado si hubieras intentado ordenar por Ganancia antes de limpiar los nulos de WorldGross y Budget en la Etapa 2? ¿Por qué el orden en que se hacen las etapas importa aquí?
+Los valores de la operación no serian los adecuado tendria datos en nulo al igual y valores de ganancias al 100% ya que en algunas peliculas los costos de inversión fueron ceros.
+
+PREGUNTA 5:
+De los géneros con más películas en el dataset (Comedia, Acción, Drama), ¿cuál tiene el promedio de calificación de crítica más alto? ¿Te sorprende, o era lo que esperabas?
+Entre los tres genero el que tiene mas critica mas alto fue el Drama,  no me solprede ya que son uno de los generos con mas actuaciones y guiones.
+
+PREGUNTA 6:
+¿Por qué guardar el resultado en un archivo nuevo (hollywood_limpio.csv), en vez de sobrescribir el archivo original hollywood.csv que descargaste?
+Mantener el archino anterior se puede comparar los cambios realizados dentro de ellos, además, si se requiere realizar otro tipo de análisis de puede tomar el archivo original, por ejemplo si se tomara en cuanta la cantidad de filas y columnas que contienen datos nulos o vacios. 
+
+

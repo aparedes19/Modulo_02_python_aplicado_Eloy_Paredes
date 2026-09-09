@@ -1,0 +1,25 @@
+
+
+import numpy as np
+
+
+
+
+# PRACTICA 3 NUMPY ARRAY
+
+ventas = np.array([
+[1200, 1350, 980, 1420, 1100],
+[850, 920, 1050, 890, 960],
+[1600, 1750, 1580, 1690, 1720],
+])
+
+
+total_ventas_sucursal = np.sum(ventas, axis=1)
+
+comisión_ventastotal_sucursal = total_ventas_sucursal * 0.5
+
+Ventas_total_por_día = np.sum(ventas, axis=0)
+
+print("Total de venta por sucursal:",total_ventas_sucursal)
+print("Comisión por ventas:",comisión_ventastotal_sucursal)
+print("Total de venta por día:",Ventas_total_por_día)

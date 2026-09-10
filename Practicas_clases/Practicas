@@ -2,6 +2,103 @@
 
 import numpy as np
 
+#PRACTICA 1 Práctica de Python Aplicado
+
+# 1. variables de entrada
+cuenta = float(input("Ingrese el monto de la cuenta: "))
+personas = int(input("Ingrese la cantidad de personas: "))
+
+# 2. Determinación del porcentaje base
+if cuenta < 20:
+    porcentaje = 0.10
+elif cuenta <= 50:
+    porcentaje = 0.15
+else:
+    porcentaje = 0.20
+
+# 3. Total de personas y ajuste del porcentaje
+if personas > 4:
+    porcentaje += 0.05
+
+# 4. Cálculos
+propina = cuenta * porcentaje
+total = cuenta + propina
+pago_por_persona = total / personas
+
+# 5. Resultados
+print(f"Propina: ${propina}")
+print(f"Total a pagar: ${total}")
+print(f"Cada persona paga: ${pago_por_persona}")
+
+
+
+#PRACTICA 2
+
+
+equipos = [
+    ["Los Rayos", 15, 20, 18],
+    ["Estrellas FC", 22, 19, 25],
+    ["Team Nova", 10, 12, 8],
+]
+
+# Total de puntos
+for equipo in equipos:
+    nombre = equipo[0]
+    total = sum(equipo[1:]) 
+    
+    # Clasificación equipos
+    if total >= 60:
+        clasificacion = "Campeón"
+    elif total >= 40:
+        clasificacion = "Finalista"
+    else:
+        clasificacion = "Participante"
+        
+    print(f"{nombre}: total {total}, {clasificacion}")
+
+    # Puntaje total mas alto por equipo.
+
+Total_equipo = [
+    ["Estrellas", 66],
+    ["Team nova", 30],
+    ["Los Rayos", 53]
+]
+
+max_puntaje = -1
+nombre_ganador = ""
+
+for equipo in Total_equipo:
+    nombre = equipo[0] 
+    puntaje = equipo[1]
+    
+    gi
+    if puntaje > max_puntaje:
+        max_puntaje = puntaje
+        nombre_ganador = nombre
+
+print(f"Equipos puntaje mas alto: {nombre_ganador} = {max_puntaje}")
+
+
+rondas = 0
+
+while max_puntaje < 70:
+    max_puntaje = max_puntaje +5
+    rondas = rondas + 1
+
+print(f"Equipo: {nombre_ganador}")
+print(f"Rondas necesarias: {rondas}")
+print(f"Total final tras ronda bonus: {max_puntaje}")
+
+
+
+
+clasificacion = "Campeon"
+
+resultado_campeonato = (nombre_ganador, clasificacion)
+
+print(resultado_campeonato) 
+
+
 
 
 
@@ -16,7 +113,7 @@ ventas = np.array([
 
 total_ventas_sucursal = np.sum(ventas, axis=1)
 
-comisión_ventastotal_sucursal = total_ventas_sucursal * 0.5
+comisión_ventastotal_sucursal = total_ventas_sucursal * 0.05
 
 Ventas_total_por_día = np.sum(ventas, axis=0)
 
